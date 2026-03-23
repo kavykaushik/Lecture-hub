@@ -1911,7 +1911,7 @@ async function doSignup() {
        Receives: { success, message }
        Backend generates OTP and emails it to the user.
     ──────────────────────────────────────────────────────── */
-    await apiCall('/api/auth/send-otp', { email });
+    await apiCall('/api/auth/send-otp', { email, name, password: pw });
 
     // Update OTP screen with the email
     document.getElementById('otp-email-tag').textContent = email;
