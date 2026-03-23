@@ -548,7 +548,7 @@ do_interactive_stage() {
 check_repo
 
 case "${1:-}" in
-  ""|quick|q)   quick_flow ;;
+  ""|quick|q)   advanced_menu ;;
   menu|m)       advanced_menu ;;
   status|s)     show_status; detailed_status ;;
   pull)         do_pull ;;
